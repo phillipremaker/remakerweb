@@ -11,7 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-header > img {
+header  img {
   width: 7rem;  
   padding-left: 1%;
 
@@ -41,26 +41,41 @@ header {
 }
 
 #responsive-links {
-  background-color: #3c415b;
+  width: 100%;
+  margin:0;
   padding-right: 1%;
-  color: white;
+  background-color: #3c415b;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
+  justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  width: 100%;
-  flex-flow: column;
+  text-decoration: none;
 }
 
-header p {
+header a {
   color: white;
   padding-right: 3%;
+  background-color: #3c415b;
 }
 
 .closed {
   display: none !important;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color:white;
+}
 .open {
   display: flex !important;
+}
+
+header div {
+  width: 100%;
+  margin:0;
+
 }

@@ -17,6 +17,8 @@
     "react-burger-menu": "^2.7.1",
     "react-dom": "^16.13.1",
     "react-hamburgers": "^1.0.0",
+    "react-hooks-global-state": "^1.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-window-size-listener": "^1.5.4"
   },
