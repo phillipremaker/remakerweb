@@ -58,7 +58,7 @@ function Navvy(props) {
 function DesktopNav(props) {
 
   return(
-      <header>
+      <header class="row">
          <Link to="/"> <img src={require("./logo.png")} alt="elvis75 liscense plate" />  </Link>
           <div id="links">
               <Link to="/how"> How and Why </ Link>
@@ -77,15 +77,15 @@ function MobileNav(props) {
   const nonactive = () => setActive(false);
   return(
       <>
-       <header>
-       <Link to="/" > <img onClick={()=>{setActive(false);}} src={require("./logo.png")} alt="elvis75 liscense plate" /></Link>
+       <header class={active? "column" : "row"}>
+       <div  id="tops"><Link to="/" > <img onClick={()=>{setActive(false);}} src={require("./logo.png")} alt="elvis75 liscense plate" /></Link>
   <div id="links">
      <img  src={active? require("./x.png") :require("./menu.png")} alt= "hamburger menu icon" onClick={
           active?nonactive:setactive
       }/>
+      </div>
       
   </div>
-  </header>
   <div id="responsive-links" className={active?"open": "closed"}>
               <Link to="/how" onClick={()=>{setActive(false)}}> How and Why </ Link>
               <Link to="/cruise" onClick={()=>{setActive(false)}}> Cruise Reports </Link>
@@ -93,6 +93,8 @@ function MobileNav(props) {
               <Link to="/summer"  onClick={()=>{setActive(false)}}> Summer of 1977</Link>
               <Link to="/noel"   onClick={()=>{setActive(false)}}> Noelderado </Link>
       </div>
+  </header>
+ 
       </>);
 }
 export default App;

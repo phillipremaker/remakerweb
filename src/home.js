@@ -9,7 +9,10 @@ function Home(props) {
   })
    
     return <div class={width > breakpoint? "home":"home-mobile"}>
-        
+          <div class="col">
+            <img src={require("./img/caddy1.jpg")} alt="side view"/>
+            <img src={require("./img/caddy2.jpg")} alt="front view"/>
+        </div>
         <div class="col">
             <h1> The 1975 Elderado Convertible</h1>
             <ul>
@@ -58,10 +61,7 @@ function Home(props) {
             </ul>
             <h2> A car of superaltives</h2>
         </div>
-        <div class="col">
-            <img src={require("./img/caddy1.jpg")} alt="side view"/>
-            <img src={require("./img/caddy2.jpg")} alt="front view"/>
-        </div>
+      
     </div>
 }
 
